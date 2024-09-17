@@ -2,8 +2,7 @@
 #include <iostream>
 
 // Returns the size of a t-shirt based on the chest measurement
-char size(int cms)
-{
+char size(int cms) {
     char sizeName = '\0';
     if (cms < 38) {
         sizeName = 'S';
@@ -15,8 +14,7 @@ char size(int cms)
     return sizeName;
 }
 
-int main()
-{
+int main() {
     assert(size(37) == 'S');
     assert(size(38) == 'S');
     assert(size(40) == 'M');
